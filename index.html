@@ -6,19 +6,26 @@
 		<title></title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.theme.min.css">
 		<link rel="stylesheet" href="css/jstron.css">
 	</head>
 	<body>
 		<canvas class="tron" width="1800" height="700"></canvas>
 		<div>Alive: <span class="alive"></span> | <label for="colors">Use complementary colors</label> <input id="colors" type="checkbox" checked></div>
-		<div>Count: <span class="count"></span></div>
-		<div id="slider-count"></div>
-		<div>Speed: <span class="speed"></span></div>
-		<div id="slider-speed"></div>
+		<div class="slider-line">
+			<div class="slider-label">Count: <span class="count"></span></div>
+			<div id="slider-count"></div>
+		</div>
+		<div class="slider-line">
+			<div>Speed: <span class="speed"></span></div>
+			<div id="slider-speed"></div>
+		</div>
 
 		<div><button class="reset">Reset</button></div>
 		
 		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery-ui.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>

@@ -1,3 +1,17 @@
 .tron {
 	margin: 20px;
 }
+/*
+.slider-line {
+	width: 100%;
+}
+.slider-line > div {
+	float: left;
+}
+.slider-line > div:first-child {
+	width: 100px;
+}
+.slider-line:after {
+	content: "";
+	clear: both;
+}*/

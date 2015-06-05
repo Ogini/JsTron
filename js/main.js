@@ -38,7 +38,7 @@ function JsTron(color1, color2) {
 		this.green = Random(256);
 		this.blue = Random(256);
 	}
-};
+}
 JsTron.prototype.Clone = function() {
 	return {
 		x: this.x,
@@ -157,6 +157,9 @@ $.fn.JsTron = function(numberOfLightBikes) {
 		$('.speed').html(2500 - speed);
 		if (alive > 0) {
 			aFrame = requestAnimationFrame(animation);
+		} else {
+			cancelAnimationFrame(aFrame);
+			$('.tron').JsTron(tronCount);
 		}
 	};
 	
